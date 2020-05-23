@@ -1,20 +1,24 @@
 {
   "name": "fishnet-node-api",
   "version": "1.0.0",
-  "description": "",
+  "engines": {
+    "node": "12.x"
+  },
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongodb": "^3.5.7"
+  },
+  "devDependencies": {
+    "eslint": "^7.1.0"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/gerry-app/fishnet-node-api.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/gerry-app/fishnet-node-api/issues"
   },
   "eslintConfig": {
     "extends": "eslint:recommended",
@@ -30,14 +34,5 @@
     "singleQuote": true,
     "trailingComma": "all",
     "arrowParens": "avoid"
-  },
-  "homepage": "https://github.com/gerry-app/fishnet-node-api#readme",
-  "dependencies": {
-    "dotenv": "^8.2.0",
-    "express": "^4.17.1",
-    "mongodb": "^3.5.7"
-  },
-  "devDependencies": {
-    "eslint": "^7.1.0"
   }
 }
