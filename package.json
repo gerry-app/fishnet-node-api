@@ -16,8 +16,28 @@
   "bugs": {
     "url": "https://github.com/gerry-app/fishnet-node-api/issues"
   },
+  "eslintConfig": {
+    "extends": "eslint:recommended",
+    "parserOptions": {
+      "ecmaVersion": 2017
+    },
+    "env": {
+      "es6": true,
+      "node": true
+    }
+  },
+  "prettier": {
+    "singleQuote": true,
+    "trailingComma": "all",
+    "arrowParens": "avoid"
+  },
   "homepage": "https://github.com/gerry-app/fishnet-node-api#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongodb": "^3.5.7"
+  },
+  "devDependencies": {
+    "eslint": "^7.1.0"
   }
 }
